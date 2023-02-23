@@ -97,30 +97,80 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(child: Divider(color: Colors.grey,),),
-                  InkWell(
-                      onTap: () => launchUrl(
-                          Uri.parse('https://www.facebook.com/iam.umairrr')),
-                      child: iconButton(FontAwesomeIcons.facebook)),
-                  InkWell(
-                      onTap: () => launchUrl(
-                          Uri.parse('https://github.com/Umaiir11')),
-                      child: iconButton(FontAwesomeIcons.github)),
-                  InkWell(
-                      onTap: () => launchUrl(
-                          Uri.parse('https://www.instagram.com/umair.hashmiii/')),
-                      child: iconButton(FontAwesomeIcons.instagram)),
-                  InkWell(
-                      onTap: () async {
-                        var whatsapp = "+923184431218";
-                        Uri whatsappopen =
-                        Uri.parse("whatsapp://send?phone=$whatsapp");
-                        if (await launchUrl(whatsappopen)) {
-                          //dialer opened
-                        } else {
-                          //dailer is not opened
-                        }
-                      },
-                      child: iconButton(FontAwesomeIcons.whatsapp)),
+
+                  IconButton(
+                    icon: Icon(
+                      FontAwesomeIcons.facebook,
+                      size: 20,
+                      color: Colors.grey,
+                    ),
+                    onPressed: () async {
+                      var whatsapp = "+923184431218";
+                      Uri whatsappopen =
+                      Uri.parse("whatsapp://send?phone=$whatsapp");
+                      if (await launchUrl(whatsappopen)) {
+                        //dialer opened
+                      } else {
+                        //dailer is not opened
+                      }
+                    },
+                  ),
+
+                  IconButton(
+                    icon: Icon(
+                      FontAwesomeIcons.github,
+                      size: 20,
+                      color: Colors.grey,
+                    ),
+                    onPressed: () async {
+                      var whatsapp = "+923184431218";
+                      Uri whatsappopen =
+                      Uri.parse("whatsapp://send?phone=$whatsapp");
+                      if (await launchUrl(whatsappopen)) {
+                        //dialer opened
+                      } else {
+                        //dailer is not opened
+                      }
+                    },
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      FontAwesomeIcons.instagram,
+                      size: 20,
+                      color: Colors.grey,
+                    ),
+                    onPressed: () async {
+                      var whatsapp = "+923184431218";
+                      Uri whatsappopen =
+                      Uri.parse("whatsapp://send?phone=$whatsapp");
+                      if (await launchUrl(whatsappopen)) {
+                        //dialer opened
+                      } else {
+                        //dailer is not opened
+                      }
+                    },
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      FontAwesomeIcons.whatsapp,
+                      size: 20,
+                      color: Colors.grey,
+                    ),
+                    onPressed: () async {
+                      var whatsapp = "+923184431218";
+                      Uri whatsappopen =
+                      Uri.parse("whatsapp://send?phone=$whatsapp");
+                      if (await launchUrl(whatsappopen)) {
+                        //dialer opened
+                      } else {
+                        //dailer is not opened
+                      }
+                    },
+                  ),
+
+
+
+
                   Expanded(child: Divider(color: Colors.grey,),),
                 ],
               ),
